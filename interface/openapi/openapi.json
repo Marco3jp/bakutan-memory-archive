@@ -1,0 +1,143 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "bakutan-memory-archive",
+    "description": "Save and load the memory of bakutan",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https"
+    }
+  ],
+  "paths": {
+    "/memory": {
+      "get": {
+        "summary": "Get memory",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "memories": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Memory"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Save memory, definition is wip",
+        "requestBody": {
+          "description": "Memory",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "memory": {
+                    "$ref": "#/components/schemas/Memory"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/memory/{id}": {
+      "get": {
+        "summary": "Get memory",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "memory": {
+                      "$ref": "#/components/schemas/Memory"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Memory": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "eventKey": {
+            "type": "string"
+          },
+          "version": {
+            "type": "integer"
+          },
+          "year": {
+            "type": "integer"
+          },
+          "eventRoot": {
+            "type": "string"
+          },
+          "eventDetails": {
+            "type": "array",
+            "items": "string"
+          },
+          "takenDate": {
+            "type": "integer"
+          },
+          "tweetDate": {
+            "type": "integer"
+          },
+          "location": {
+            "type": "string"
+          },
+          "photoTweetUrl": {
+            "type": "string"
+          },
+          "authorScreenID": {
+            "type": "string"
+          },
+          "isEventDay": {
+            "type": "boolean"
+          },
+          "memoryType": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
