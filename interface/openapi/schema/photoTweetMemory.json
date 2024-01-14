@@ -1,0 +1,81 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "photo-tweet-memory",
+    "version": "1.0.0"
+  },
+  "paths": {},
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "eventId": {
+      "type": "string",
+      "description": "eventIdは最小単位のイベントを指し示すものです。2024_bakutan_01_collabo_mecha-uma-cafe のように記述します。これはeventDetailsをひとつの文字列で表現したものと言えます。"
+    },
+    "version": {
+      "type": "integer",
+      "description": "versionはphoto-tweet-memoryのバージョンを表現します。"
+    },
+    "eventYear": {
+      "type": "integer",
+        "description": "eventYearはイベントの開催年を表現します。"
+    },
+    "eventRoot": {
+      "type": "string",
+      "description": "eventRootは公式に表現されるイベントの様々な展開を束ねるための概念です。例えば さなのばくたん。-王国からの招待状- に関わるイベントは 2024_bakutan_01 のように記述します。イベントごとに特性があるため命名規則は決まっていません。ただし、年や回数表記を付与することは推奨されます。また、公式に別ではあるが関連する場合（Vの宴2024 feat.さなのばくたん。など）では 2024_bakutan_01_after-party のように、前方一致で検索可能な形が推奨されます。"
+    },
+    "eventDetails": {
+      "type": "array",
+      "description": "eventDetailsは最小単位のイベントを詳細に表現します。eventRootをアンダースコアで区切ったものから始まり、[2024, bakutan, 01, collabo, mecha-uma-cafe]のように表現します。これはeventIdを配列で表現したものと言えます。ただしデータを保持する側面が強いため、検索・フィルタといった用途で用いる場合はプロパティの拡張を検討してください。",
+      "items": "string"
+    },
+    "takenDate": {
+      "type": "integer",
+      "description": "takenDateは撮影日時を表現します。unixtimeで表現します。"
+    },
+    "tweetDate": {
+      "type": "integer",
+        "description": "tweetDateはツイート日時を表現します。unixtimeで表現します。"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "locationId": {
+          "type": "string",
+          "description": "locationIdはランドマークとしての場所を指し示すものです。例えば la-cittadella_cinecitta_1f_mecha-uma-cafe のように記述します。大きな概念から小さい概念に向かって記述します。それぞれの概念はアンダースコアで結合します。もし概念が複数の単語で表現される場合、ハイフンで結合します。ただし分解能は社会的な程度に過ぎないため、同一のlocationIdでありながら座標などの付随する情報に差異があることは許容されます。"
+        },
+        "geolocation": {
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "type": "number",
+              "format": "double"
+            },
+            "longitude": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        }
+      }
+    },
+    "photoTweetUrl": {
+      "type": "string",
+        "description": "photoTweetUrlはツイートのURLを表現します。"
+    },
+    "authorScreenID": {
+      "type": "string",
+        "description": "authorScreenIDはツイートの投稿者を表現します。"
+    },
+    "isEventDay": {
+      "type": "boolean",
+        "description": "isEventDayはイベント当日であるかを表現します。"
+    },
+    "memoryType": {
+      "type": "string",
+      "description": "memoryの種類を表現します。photo-tweet-memoryにおいては photoTweet で固定されます。利用する側は様々なmemoryをこの値で判別することができます。"
+    }
+  }
+}
