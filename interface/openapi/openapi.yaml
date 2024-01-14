@@ -1,75 +1,75 @@
 openapi: 3.1.0
 info:
-  title: bakutan-memory-archive
-  description: Save and load the memory of bakutan
+  title: "bakutan-memory-archive"
+  description: "Save and load the memory of bakutan"
   version: 1.0.0
 servers:
-  - url: https
+  - url: "https"
 paths:
   /memory:
     get:
-      summary: Get memory, definition is wip
+      summary: "Get memory, definition is wip"
       responses:
         '200':
-          description: OK
+          description: "OK"
           content:
             application/json:
               schema:
-                type: object
+                type: "object"
                 properties:
                   memories:
-                    type: array
+                    type: "array"
                     items:
-                      $ref: schema/memory.yaml
+                      $ref: "schema/memory.yaml"
     post:
-      summary: Save memory, definition is wip
+      summary: "Save memory, definition is wip"
       requestBody:
-        description: Memory
+        description: "Memory"
         content:
           application/json:
             schema:
-              type: object
+              type: "object"
               properties:
                 memory:
-                  $ref: schema/memory.yaml
+                  $ref: "schema/memory.yaml"
       responses:
         '200':
-          description: OK
+          description: "OK"
   /memory/{id}:
     get:
-      summary: Get memory
+      summary: "Get memory"
       parameters:
-        - name: id
-          in: path
+        - name: "id"
+          in: "path"
           required: true
           schema:
-            type: string
+            type: "string"
       responses:
         '200':
           content:
             application/json:
               schema:
-                type: object
+                type: "object"
                 properties:
                   memory:
-                    $ref: schema/memory.yaml
+                    $ref: "schema/memory.yaml"
   /memory/byEventId/{eventId}:
     get:
-      summary: Get memory by eventKey
+      summary: "Get memory by eventKey"
       parameters:
-        - name: eventKey
-          in: path
+        - name: "eventKey"
+          in: "path"
           required: true
           schema:
-            type: string
+            type: "string"
       responses:
         '200':
           content:
             application/json:
               schema:
-                type: object
+                type: "object"
                 properties:
                   memories:
-                    type: array
+                    type: "array"
                     items:
-                      $ref: schema/memory.yaml
+                      $ref: "schema/memory.yaml"
