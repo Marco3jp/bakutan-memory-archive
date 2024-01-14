@@ -10,7 +10,7 @@ properties:
   eventId:
     type: string
     description: "\
-      eventIdは最小単位のイベントを指し示すものです。\
+      eventIdは最小単位のイベントを指し示します。\
       2024_bakutan_01_collabo_mecha-uma-cafeのように記述します。\
       これはeventDetailsをひとつの文字列で表現したものと言えます。"
   version:
@@ -46,7 +46,7 @@ properties:
       locationId:
         type: string
         description: "\
-          locationIdはランドマークとしての場所を指し示すものです。\
+          locationIdはランドマークとしての場所を指し示します。\
           例えばla-cittadella_cinecitta_1f_mecha-uma-cafeのように記述します。\
           大きな概念から小さい概念に向かって記述します。\
           それぞれの概念はアンダースコアで結合します。\
