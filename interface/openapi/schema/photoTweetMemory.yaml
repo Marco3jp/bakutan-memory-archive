@@ -43,6 +43,12 @@ properties:
   location:
     type: "object"
     properties:
+      isInternet:
+        type: "boolean"
+        description: "isInternetは撮影場所がインターネットであるかを表現します。\
+        この値がtrueの場合、locationIdやgeolocationの値は様々な解釈が可能になります。\
+        例えば家の座標を丸めた値や中継で結ばれた地点の座標など、表現者の裁量で決定してもよいです。\
+        このとき各情報は信頼してはいけません。信頼できない情報に価値がある場合のみ利用してください。"
       locationId:
         type: "string"
         description: "\
@@ -53,7 +59,9 @@ properties:
           もし概念が複数の単語で表現される場合、ハイフンで結合します。\
           ただし分解能は社会的な程度に過ぎないため、同一のlocationIdでありながら座標などの付随する情報に差異があることは許容されます。"
       geolocation:
-        type: "object"
+        type: "object",
+        description: "geolocationは撮影した場所の緯度経度を表現します。\
+        バーチャルサナトリウムやなぞのばしょのように緯度経度で表現できない場合、lat, long = 0, 0 (= Null Island)と表現してください。"
         properties:
           latitude:
             type: "number"
