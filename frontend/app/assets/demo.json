@@ -1,0 +1,343 @@
+{
+  "chapters": [
+    {
+      "id": "chapter-1",
+      "title": "どくラジギャラクティカ",
+      "section": {
+        "start": "00:00:00"
+      },
+      "memories": [
+        {
+          "id": "string",
+          "eventId": "string",
+          "version": 0,
+          "eventYear": 0,
+          "eventRoot": "string",
+          "eventDetails": [],
+          "takenDate": 0,
+          "tweetDate": 0,
+          "timeInEvent": "00:00:00",
+          "location": {
+            "isInternet": true,
+            "locationId": "string",
+            "geolocation": {
+              "latitude": 0,
+              "longitude": 0
+            }
+          },
+          "photoTweetUrl": "https://twitter.com/Marco_utau/status/1622208029793071104",
+          "authorScreenID": "string",
+          "isEventDay": true,
+          "memoryType": "string"
+        }
+      ]
+    },
+    {
+      "id": "chapter-2",
+      "title": "MC",
+      "section": {
+        "start": "00:05:00"
+      },
+      "memories": [
+        {
+          "id": "string",
+          "eventId": "string",
+          "version": 0,
+          "eventYear": 0,
+          "eventRoot": "string",
+          "eventDetails": [],
+          "takenDate": 0,
+          "tweetDate": 0,
+          "timeInEvent": "00:06:00",
+          "location": {
+            "isInternet": true,
+            "locationId": "string",
+            "geolocation": {
+              "latitude": 0,
+              "longitude": 0
+            }
+          },
+          "photoTweetUrl": "https://twitter.com/Marco_utau/status/1629814918991187969",
+          "authorScreenID": "string",
+          "isEventDay": true,
+          "memoryType": "string"
+        }
+      ]
+    },
+    {
+      "id": "chapter-3",
+      "title": "公開収録",
+      "section": {
+        "start": "00:10:00"
+      },
+      "memories": [
+        {
+          "id": "string",
+          "eventId": "string",
+          "version": 0,
+          "eventYear": 0,
+          "eventRoot": "string",
+          "eventDetails": [],
+          "takenDate": 0,
+          "tweetDate": 0,
+          "timeInEvent": "00:11:00",
+          "location": {
+            "isInternet": true,
+            "locationId": "string",
+            "geolocation": {
+              "latitude": 0,
+              "longitude": 0
+            }
+          },
+          "photoTweetUrl": "https://twitter.com/Marco_utau/status/1606649813369761796",
+          "authorScreenID": "string",
+          "isEventDay": true,
+          "memoryType": "string"
+        },
+        {
+          "id": "string",
+          "eventId": "string",
+          "version": 0,
+          "eventYear": 0,
+          "eventRoot": "string",
+          "eventDetails": [],
+          "takenDate": 0,
+          "tweetDate": 0,
+          "timeInEvent": "00:17:15",
+          "location": {
+            "isInternet": true,
+            "locationId": "string",
+            "geolocation": {
+              "latitude": 0,
+              "longitude": 0
+            }
+          },
+          "photoTweetUrl": "https://twitter.com/Marco_utau/status/1624461585220771840",
+          "authorScreenID": "string",
+          "isEventDay": true,
+          "memoryType": "string"
+        },
+        {
+          "id": "string",
+          "eventId": "string",
+          "version": 0,
+          "eventYear": 0,
+          "eventRoot": "string",
+          "eventDetails": [],
+          "takenDate": 0,
+          "tweetDate": 0,
+          "timeInEvent": "00:20:10",
+          "location": {
+            "isInternet": true,
+            "locationId": "string",
+            "geolocation": {
+              "latitude": 0,
+              "longitude": 0
+            }
+          },
+          "photoTweetUrl": "https://twitter.com/Marco_utau/status/1742535367839166942",
+          "authorScreenID": "string",
+          "isEventDay": true,
+          "memoryType": "string"
+        },
+        {
+          "id": "string",
+          "eventId": "string",
+          "version": 0,
+          "eventYear": 0,
+          "eventRoot": "string",
+          "eventDetails": [],
+          "takenDate": 0,
+          "tweetDate": 0,
+          "timeInEvent": "00:25:30",
+          "location": {
+            "isInternet": true,
+            "locationId": "string",
+            "geolocation": {
+              "latitude": 0,
+              "longitude": 0
+            }
+          },
+          "photoTweetUrl": "https://twitter.com/Marco_utau/status/1527938847539351552",
+          "authorScreenID": "string",
+          "isEventDay": true,
+          "memoryType": "string"
+        },
+        {
+          "id": "string",
+          "eventId": "string",
+          "version": 0,
+          "eventYear": 0,
+          "eventRoot": "string",
+          "eventDetails": [],
+          "takenDate": 0,
+          "tweetDate": 0,
+          "timeInEvent": "00:25:43",
+          "location": {
+            "isInternet": true,
+            "locationId": "string",
+            "geolocation": {
+              "latitude": 0,
+              "longitude": 0
+            }
+          },
+          "photoTweetUrl": "https://twitter.com/Marco_utau/status/1639481696881094657",
+          "authorScreenID": "string",
+          "isEventDay": true,
+          "memoryType": "string"
+        },
+        {
+          "id": "string",
+          "eventId": "string",
+          "version": 0,
+          "eventYear": 0,
+          "eventRoot": "string",
+          "eventDetails": [],
+          "takenDate": 0,
+          "tweetDate": 0,
+          "timeInEvent": "00:49:52",
+          "location": {
+            "isInternet": true,
+            "locationId": "string",
+            "geolocation": {
+              "latitude": 0,
+              "longitude": 0
+            }
+          },
+          "photoTweetUrl": "https://twitter.com/Marco_utau/status/1726936109844992320",
+          "authorScreenID": "string",
+          "isEventDay": true,
+          "memoryType": "string"
+        }
+      ]
+    },
+    {
+      "id": "chapter-4",
+      "title": "ま～ぶるMake up a-ha-ha!",
+      "section": {
+        "start": "00:50:00"
+      },
+      "memories": [
+        {
+          "id": "string",
+          "eventId": "string",
+          "version": 0,
+          "eventYear": 0,
+          "eventRoot": "string",
+          "eventDetails": [],
+          "takenDate": 0,
+          "tweetDate": 0,
+          "timeInEvent": "00:50:10",
+          "location": {
+            "isInternet": true,
+            "locationId": "string",
+            "geolocation": {
+              "latitude": 0,
+              "longitude": 0
+            }
+          },
+          "photoTweetUrl": "https://twitter.com/Marco_utau/status/1615700321363431425",
+          "authorScreenID": "string",
+          "isEventDay": true,
+          "memoryType": "string"
+        }
+      ]
+    },
+    {
+      "id": "chapter-5",
+      "title": "正解はひとつ!じゃない!!",
+      "section": {
+        "start": "00:55:00"
+      },
+      "memories": [
+        {
+          "id": "string",
+          "eventId": "string",
+          "version": 0,
+          "eventYear": 0,
+          "eventRoot": "string",
+          "eventDetails": [],
+          "takenDate": 0,
+          "tweetDate": 0,
+          "timeInEvent": "00:02:30",
+          "location": {
+            "isInternet": true,
+            "locationId": "string",
+            "geolocation": {
+              "latitude": 0,
+              "longitude": 0
+            }
+          },
+          "photoTweetUrl": "https://twitter.com/Marco_utau/status/1735562158589796460",
+          "authorScreenID": "string",
+          "isEventDay": true,
+          "memoryType": "string"
+        }
+      ]
+    },
+    {
+      "id": "chapter-6",
+      "title": "MC",
+      "section": {
+        "start": "01:00:00"
+      },
+      "memories": [
+        {
+          "id": "string",
+          "eventId": "string",
+          "version": 0,
+          "eventYear": 0,
+          "eventRoot": "string",
+          "eventDetails": [],
+          "takenDate": 0,
+          "tweetDate": 0,
+          "timeInEvent": "00:54:30",
+          "location": {
+            "isInternet": true,
+            "locationId": "string",
+            "geolocation": {
+              "latitude": 0,
+              "longitude": 0
+            }
+          },
+          "photoTweetUrl": "https://twitter.com/Marco_utau/status/1614967174363492355",
+          "authorScreenID": "string",
+          "isEventDay": true,
+          "memoryType": "string"
+        }
+      ]
+    },
+    {
+      "id": "chapter-7",
+      "title": "花の塔",
+      "section": {
+        "start": "01:10:00"
+      },
+      "memories": [
+        {
+          "id": "string",
+          "eventId": "string",
+          "version": 0,
+          "eventYear": 0,
+          "eventRoot": "string",
+          "eventDetails": [],
+          "takenDate": 0,
+          "tweetDate": 0,
+          "timeInEvent": "01:10:00",
+          "location": {
+            "isInternet": true,
+            "locationId": "string",
+            "geolocation": {
+              "latitude": 0,
+              "longitude": 0
+            }
+          },
+          "photoTweetUrl": "https://twitter.com/Marco_utau/status/1743722059140862141",
+          "authorScreenID": "string",
+          "isEventDay": true,
+          "memoryType": "string"
+        }
+      ]
+    }
+  ]
+}
