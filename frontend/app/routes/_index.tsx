@@ -1,6 +1,8 @@
 import type {MetaFunction} from "@remix-run/node";
 import eventData from "../assets/demo.json"
 import {useState} from "react";
+import { ClientOnly } from "remix-utils/client-only";
+import { Tweet } from 'react-tweet'
 
 export const meta: MetaFunction = () => {
     return [
@@ -13,9 +15,10 @@ export const meta: MetaFunction = () => {
 // 0年目のばくたん。という気持ちで日付を選んだ
 const sanaChannelBaseDate = "2018-03-07"
 const eventLength = new Date(`${sanaChannelBaseDate}T${eventData.event.eventDuration}Z`).getTime() - new Date(`${sanaChannelBaseDate}T00:00:00Z`).getTime()
+const getTwitterIdRegexp = /https:\/\/twitter.com\/.*\/status\/(?<id>\d+)/
 
 export default function Index() {
-    const [currentChapter, setCurrentChapter] = useState(eventData.chapters[0].id)
+    const [currentChapter, setCurrentChapter] = useState<string>(eventData.chapters[0].id)
 
     const chapterElements = eventData.chapters.map((chapter, index) => {
         const selectChapter = () => {
@@ -40,11 +43,11 @@ export default function Index() {
         )
     })
 
-
-// chapterのidをキーに持つオブジェクト
+    // chapterのidをキーに持つオブジェクト
     const memoriesByChapter: { [key: string]: Array<object> } = eventData.chapters.reduce((acc: {
         [key: string]: Array<object>
     }, chapter) => {
+        // このあたりのソート処理は一旦消す、イベント内時間まで書くのは普通にきつい
         acc[chapter.id] = chapter.memories.sort((a, b) => {
             const aData = new Date(`${sanaChannelBaseDate}T${a.timeInEvent}Z`)
             const bData = new Date(`${sanaChannelBaseDate}T${b.timeInEvent}Z`)
@@ -54,16 +57,24 @@ export default function Index() {
     }, {})
 
     const memoryElements = memoriesByChapter[currentChapter].map((memory) => {
+        const photoTweetId = memory.photoTweetUrl.match(getTwitterIdRegexp)?.groups?.id
+
         return (
-            <li key={memory.id}>
-                <div>
-                    <p>{memory.timeInEvent}</p>
-                    <p><a href={memory.photoTweetUrl}></a>{memory.photoTweetUrl}</p>
-                </div>
+            <li key={memory.photoTweetUrl}>
+                <ClientOnly>
+                    {
+                        () => {
+                            return (
+                                <div>
+                                    <Tweet id={photoTweetId}></Tweet>
+                                </div>
+                            )
+                        }
+                    }
+                </ClientOnly>
             </li>
         )
     }) ?? <p>no data</p>
-
 
     return (
         <div className="text-neutral-50 bg-gray-950 h-dvh w-dvw flex flex-col">
