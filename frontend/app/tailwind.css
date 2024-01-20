@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --header-height: 3rem;
+    }
+}
+
+#header {
+    height: var(--header-height);
+}
+
+#main {
+    height: calc(100% - var(--header-height));
+    max-height: calc(100% - var(--header-height));
+}
+
+#main .react-tweet-theme {
+    --tweet-container-margin: unset;
+}

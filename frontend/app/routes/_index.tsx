@@ -30,7 +30,7 @@ export default function Index() {
         const chapterLengthPercentage = chapterLength / eventLength * 100
 
         return (
-            <li key={chapter.id} className={"flex flex-col items-center"}
+            <li key={chapter.id} className="flex flex-col items-center"
                 // ↓の方針だと端数の処理次第で若干だけはみ出る可能性があるので、もしかするとflex-growの方がいいかもしれない
                 style={{height: `${chapterLengthPercentage}%`}}>
                 {/* こっちは○ */}
@@ -60,7 +60,7 @@ export default function Index() {
         const photoTweetId = memory.photoTweetUrl.match(getTwitterIdRegexp)?.groups?.id
 
         return (
-            <li key={memory.photoTweetUrl}>
+            <li key={memory.photoTweetUrl} className="block">
                 <ClientOnly>
                     {
                         () => {
@@ -78,12 +78,12 @@ export default function Index() {
 
     return (
         <div className="text-neutral-50 bg-gray-950 h-dvh w-dvw flex flex-col">
-            <header className="border-b border-solid border-natori-accent-pink flex">
-                <h1>bakutan archive memory</h1>
+            <header id="header" className="border-b border-solid border-natori-accent-pink flex items-center">
+                <h1 className="ml-2">bakutan archive memory</h1>
             </header>
 
-            <main className="flex-grow flex">
-                <aside className="h-full">
+            <main id="main" className="flex">
+                <aside className="h-full px-2">
                     <nav className="h-full">
                         <ol className="h-full">
                             {chapterElements}
@@ -91,7 +91,7 @@ export default function Index() {
                     </nav>
                 </aside>
                 <section className="h-full">
-                    <ol className="h-full">
+                    <ol className="h-full space-y-2 overflow-y-auto">
                         {memoryElements}
                     </ol>
                 </section>
