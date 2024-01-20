@@ -1,4 +1,7 @@
 {
+  "event": {
+    "eventDuration": "01:20:00"
+  },
   "chapters": [
     {
       "id": "chapter-1",
