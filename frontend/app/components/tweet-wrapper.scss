@@ -1,0 +1,64 @@
+// マージンなど最小化して良い感じにするコードたち
+.tweet-wrapper {
+  [class*="actions"],  [class*="replies"], [class*="infoLink"] {
+    display: none;
+  }
+
+  [class*="article"] {
+    padding: 0.5rem;
+
+    [class*="header"] {
+      padding-bottom: 0.5rem;
+
+      [class*="avatar"] {
+        // アイコン
+        height: 32px;
+        width: 32px;
+      }
+
+      [class*="author"] {
+        // display name, idが書いてあるあたり
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+      }
+    }
+
+    // ツイートの本文
+    p {
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+    }
+
+    // ツイート本文の次に来るコンテンツ
+    p + div {
+        margin-top: 0.5rem;
+    }
+
+    [class*="info"] {
+      justify-content: flex-end
+    }
+  }
+}
+
+// 理由はわからんけどなんかスタイルが意図しない形になるので修正するためのコードたち
+.tweet-wrapper {
+  article {
+    [class*="mediaWrapper"] {
+      height: unset;
+
+      a[class*="mediaContainer"] {
+        height: unset;
+
+        [class*="skeleton"] {
+          margin: unset !important;
+          padding: unset !important;
+        }
+        img[class*="image"] {
+          object-fit: contain;
+          height: unset;
+          position: unset;
+        }
+      }
+    }
+  }
+}
