@@ -4,11 +4,17 @@
     display: none;
   }
 
+  // react-tweet本体
+  .react-tweet-theme {
+    max-width: 420px;
+  }
+
   [class*="article"] {
     padding: 0.5rem;
 
     [class*="header"] {
       padding-bottom: 0.5rem;
+      align-items: center;
 
       [class*="avatar"] {
         // アイコン

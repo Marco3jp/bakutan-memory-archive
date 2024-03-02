@@ -60,7 +60,7 @@ export default function Index() {
         const photoTweetId = memory.photoTweetUrl.match(getTwitterIdRegexp)?.groups?.id
 
         return (
-            <li key={memory.photoTweetUrl} className="block pr-2">
+            <li key={memory.photoTweetUrl} className="block">
                 <TweetWrapper photoTweetId={photoTweetId}></TweetWrapper>
             </li>
         )
@@ -72,7 +72,7 @@ export default function Index() {
                 <h1 className="ml-2">bakutan archive memory</h1>
             </header>
 
-            <main id="main" className="flex">
+            <main id="main" className="max-w-full flex">
                 <aside className="h-full px-2">
                     <nav className="h-full">
                         <ol className="h-full">
@@ -81,7 +81,7 @@ export default function Index() {
                     </nav>
                 </aside>
                 <section className="h-full flex-grow">
-                    <ol className="h-full space-y-2 overflow-y-auto py-4">
+                    <ol className="h-full overflow-y-auto py-4 flex flex-row flex-wrap content-start items-start gap-4">
                         {memoryElements}
                     </ol>
                 </section>
