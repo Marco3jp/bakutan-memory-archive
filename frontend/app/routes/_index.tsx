@@ -1,8 +1,8 @@
 import type {MetaFunction} from "@remix-run/node";
 import eventData from "../assets/demo.json"
 import {useState} from "react";
-import { ClientOnly } from "remix-utils/client-only";
-import { Tweet } from 'react-tweet'
+import "node_modules/react-tweet/dist/twitter-theme/components.js"
+import {TweetWrapper} from "~/components/TweetWrapper";
 
 export const meta: MetaFunction = () => {
     return [
@@ -60,18 +60,8 @@ export default function Index() {
         const photoTweetId = memory.photoTweetUrl.match(getTwitterIdRegexp)?.groups?.id
 
         return (
-            <li key={memory.photoTweetUrl} className="block">
-                <ClientOnly>
-                    {
-                        () => {
-                            return (
-                                <div>
-                                    <Tweet id={photoTweetId}></Tweet>
-                                </div>
-                            )
-                        }
-                    }
-                </ClientOnly>
+            <li key={memory.photoTweetUrl} className="block pr-2">
+                <TweetWrapper photoTweetId={photoTweetId}></TweetWrapper>
             </li>
         )
     }) ?? <p>no data</p>
@@ -90,8 +80,8 @@ export default function Index() {
                         </ol>
                     </nav>
                 </aside>
-                <section className="h-full">
-                    <ol className="h-full space-y-2 overflow-y-auto">
+                <section className="h-full flex-grow">
+                    <ol className="h-full space-y-2 overflow-y-auto py-4">
                         {memoryElements}
                     </ol>
                 </section>
