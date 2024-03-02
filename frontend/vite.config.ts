@@ -8,8 +8,10 @@ installGlobals();
 export default defineConfig({
   plugins: [remix({
     ssr: false,
+    basename: "/bakutan-memory-archive/"
   }), tsconfigPaths()],
   ssr: {
     noExternal: ["react-tweet"]
-  }
+  },
+  base: "/bakutan-memory-archive/"
 });
