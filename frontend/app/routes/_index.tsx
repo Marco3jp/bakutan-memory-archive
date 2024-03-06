@@ -29,15 +29,17 @@ export default function Index() {
         const chapterLengthPercentage = (chapter.ratio / stageRatioSum) * 100
 
         return (
-            <li key={index} className="flex flex-col items-center"
+            <li key={index} className="group flex flex-col items-center cursor-pointer" onClick={selectChapter}
                 // ↓の方針だと端数の処理次第で若干だけはみ出る可能性があるので、もしかするとflex-growの方がいいかもしれない
                 style={{height: `${chapterLengthPercentage}%`}}>
                 {/* こっちは○ */}
-                <button type="button" className="w-6 h-6 border-4 border-natori-accent-pink rounded-full"
-                        onClick={selectChapter}></button>
+                <div className={
+                    `w-6 h-6 border-4 rounded-full ${currentChapterIndex === index ? "border-natori-accent-pink" : "border-natori-accent-pink-light group-hover:border-natori-accent-pink "}`
+                }></div>
                 {/* こっちは縦線 */}
-                <button type="button" className="flex-grow border-2 border-natori-accent-pink"
-                        onClick={selectChapter}></button>
+                <div className={
+                    `flex-grow border-2 ${currentChapterIndex === index ? "border-natori-accent-pink" : "border-natori-accent-pink-light group-hover:border-natori-accent-pink"}`
+                }></div>
             </li>
         )
     })
