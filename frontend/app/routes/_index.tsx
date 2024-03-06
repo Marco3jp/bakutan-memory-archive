@@ -15,13 +15,13 @@ const getTwitterIdRegexp = /https:\/\/twitter.com\/.*\/status\/(?<id>\d+)/
 
 export default function Index() {
     const [currentStageIndex, setCurrentStageIndex] = useState<number>(7)
-    const currentEvent = bakutan2024.stages[currentStageIndex]
+    const currentStage = bakutan2024.stages[currentStageIndex]
 
     const [currentChapterIndex, setCurrentChapterIndex] = useState<number>(0)
-    const currentChapter = currentEvent.chapters[currentChapterIndex]
+    const currentChapter = currentStage.chapters[currentChapterIndex]
 
-    const stageRatioSum = currentEvent.chapters.reduce((acc, chapter) => { return acc + chapter.ratio }, 0)
-    const chapterElements = currentEvent.chapters.map((chapter, index) => {
+    const stageRatioSum = currentStage.chapters.reduce((acc, chapter) => { return acc + chapter.ratio }, 0)
+    const chapterElements = currentStage.chapters.map((chapter, index) => {
         const selectChapter = () => {
             setCurrentChapterIndex(index)
         }
@@ -53,26 +53,40 @@ export default function Index() {
     })
 
     const stageSelectElement = (() => {
-        const onChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const [shouldShowStageList, setShouldShowStageList] = useState<boolean>(false)
+
+        const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
             setCurrentChapterIndex(0)
+            setShouldShowStageList(false)
             setCurrentStageIndex(parseInt(event.target.value))
         }
 
         return (
-            <select onChange={onChange}>
-                {
-                    bakutan2024.stages.map((stage, index) => {
-                        return <option key={index} value={index}>{stage.name}</option>
-                    })
-                }
-            </select>
+            <div className={`mr-2 text-neutral-50 ${shouldShowStageList ? "self-start" : ""}`}>
+                <div onClick={() => setShouldShowStageList(true)} className={`px-1 md:px-2 py-1 text-xs/6 md:text-base border border-natori-accent-pink rounded line-clamp-1 ${shouldShowStageList ? "hidden" : ""}`}>
+                    {currentStage.name}
+                </div>
+                <div onClick={() => setShouldShowStageList(false)} className={`h-dvh w-dvw fixed top-0 left-0 z-10 ${shouldShowStageList ? "" : "hidden"}`}></div>
+                <div className={`flex flex-col px-2 py-1 border border-natori-accent-pink rounded divide-y divide-natori-accent-pink text-sm/6 md:text-base bg-gray-950 relative z-20 max-h-dvh overflow-y-auto ${shouldShowStageList ? "" : "hidden"}`}>
+                    {
+                        bakutan2024.stages.map((stage, index) => {
+                            return (
+                                <label className="block p-1">
+                                    {stage.name}
+                                    <input type="radio" name="stage" onChange={onChange} key={index} value={index} checked={currentStageIndex === index} hidden></input>
+                                </label>
+                            )
+                        })
+                    }
+                </div>
+            </div>
         )
     })()
 
     return (
         <div className="text-neutral-50 bg-gray-950 h-dvh w-dvw flex flex-col">
-            <header id="header" className="border-b border-solid border-natori-accent-pink flex items-center">
-                <h1 className="ml-2">bakutan archive memory</h1>
+            <header id="header" className="border-b border-solid border-natori-accent-pink flex items-center justify-between">
+                <h1 className="px-2 shrink-0 text-sm/6 md:text-base">bakutan archive memory</h1>
                 {stageSelectElement}
             </header>
 
