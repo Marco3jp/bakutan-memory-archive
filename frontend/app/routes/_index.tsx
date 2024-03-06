@@ -14,7 +14,7 @@ export const meta: MetaFunction = () => {
 const getTwitterIdRegexp = /https:\/\/twitter.com\/.*\/status\/(?<id>\d+)/
 
 export default function Index() {
-    const [currentStageIndex, setCurrentStageIndex] = useState<number>(0)
+    const [currentStageIndex, setCurrentStageIndex] = useState<number>(7)
     const currentEvent = bakutan2024.stages[currentStageIndex]
 
     const [currentChapterIndex, setCurrentChapterIndex] = useState<number>(0)
