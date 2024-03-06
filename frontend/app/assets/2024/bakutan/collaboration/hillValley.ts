@@ -6,7 +6,7 @@ export const hillValley: Stage = {
     chapters: [
         {
             name: "",
-            radio: 1,
+            ratio: 1,
             memories: [
                 {
                     tweetUrl: "https://twitter.com/"

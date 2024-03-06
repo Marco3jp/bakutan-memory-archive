@@ -6,7 +6,7 @@ export const afterparty: Stage = {
     chapters: [
         {
             name: "アフターパーティー",
-            radio: 1,
+            ratio: 1,
             memories: [
                 {
                     tweetUrl: "https://twitter.com/"

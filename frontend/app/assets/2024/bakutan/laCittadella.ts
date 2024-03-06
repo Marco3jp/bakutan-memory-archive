@@ -6,7 +6,7 @@ export const laCittadella: Stage = {
     chapters: [
         {
             name: "オレンジジュース自販機くん",
-            radio: 1,
+            ratio: 1,
             memories: [
                 {
                     tweetUrl: "https://twitter.com/"

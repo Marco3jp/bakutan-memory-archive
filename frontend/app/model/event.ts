@@ -6,7 +6,7 @@ export type Chapter = {
     name: string,
     // radio は stageのチャプターのうち、どれだけの比率を占めるかを表す
     // 例えば、stageのチャプターが3つで、それぞれのradioが1, 2, 3の場合、それぞれのチャプターが1/6, 2/6, 3/6の比率で表示される
-    radio: number,
+    ratio: number,
     memories: Memory[]
 }
 

@@ -6,7 +6,7 @@ export const misc: Stage = {
     chapters: [
         {
             name: "せんせえたちの部屋",
-            radio: 1,
+            ratio: 1,
             memories: [
                 {
                     tweetUrl: "https://twitter.com/"

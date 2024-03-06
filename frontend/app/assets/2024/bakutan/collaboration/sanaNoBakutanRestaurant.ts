@@ -6,7 +6,7 @@ export const sanaNoBakutanRestaurant: Stage = {
     chapters: [
         {
             name: "白熊堂",
-            radio: 1,
+            ratio: 1,
             memories: [
                 {
                     tweetUrl: "https://twitter.com/"
@@ -15,7 +15,7 @@ export const sanaNoBakutanRestaurant: Stage = {
         },
         {
             name: "Amici",
-            radio: 1,
+            ratio: 1,
             memories: [
                 {
                     tweetUrl: "https://twitter.com/"
@@ -24,7 +24,7 @@ export const sanaNoBakutanRestaurant: Stage = {
         },
         {
             name: "Lanapia",
-            radio: 1,
+            ratio: 1,
             memories: [
                 {
                     tweetUrl: "https://twitter.com/"
@@ -33,7 +33,7 @@ export const sanaNoBakutanRestaurant: Stage = {
         },
         {
             name: "食炒音",
-            radio: 1,
+            ratio: 1,
             memories: [
                 {
                     tweetUrl: "https://twitter.com/"

@@ -6,7 +6,7 @@ export const cinecitta: Stage = {
     chapters: [
         {
             name: "1F",
-            radio: 1,
+            ratio: 1,
             memories: [
                 {
                     tweetUrl: "https://twitter.com/"

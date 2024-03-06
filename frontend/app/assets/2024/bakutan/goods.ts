@@ -6,7 +6,7 @@ export const goods: Stage = {
     chapters: [
         {
             name: "物販",
-            radio: 1,
+            ratio: 1,
             memories: [
                 {
                     tweetUrl: "https://twitter.com/"

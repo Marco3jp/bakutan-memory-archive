@@ -6,7 +6,7 @@ export const zan: Stage = {
     chapters: [
         {
             name: "開演前",
-            radio: 1,
+            ratio: 1,
             memories: [
                 {
                     tweetUrl: "https://twitter.com/"
