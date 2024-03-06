@@ -4,10 +4,10 @@
 import { Tweet } from 'node_modules/react-tweet/dist/swr.js'
 import "./tweet-wrapper.scss"
 
-export function TweetWrapper(props: {photoTweetId: string}) {
+export function TweetWrapper(props: {tweetId: string}) {
     return (
         <div className="tweet-wrapper" data-theme="dark">
-            <Tweet data-theme="dark" id={props.photoTweetId}></Tweet>
+            <Tweet data-theme="dark" id={props.tweetId}></Tweet>
         </div>
     )
 }
