@@ -5,12 +5,14 @@ export const laCittadella: Stage = {
     locationName: "LA CITTADELLA",
     chapters: [
         {
-            name: "オレンジジュース自販機くん",
+            // 名称は https://www.colorkinetics.co.jp/works/164 による
+            name: "ガラスタワー",
             ratio: 1,
             memories: [
                 {
-                    tweetUrl: "https://twitter.com/"
-                }
+                    tweetUrl: "https://twitter.com/VaistarStudio/status/1763553819554955677"
+                },
+
             ]
         }
     ]

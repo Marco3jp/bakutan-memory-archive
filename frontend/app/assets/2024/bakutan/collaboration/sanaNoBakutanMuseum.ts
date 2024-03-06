@@ -9,7 +9,7 @@ export const sanaNoBakutanMuseum: Stage = {
             ratio: 1,
             memories: [
                 {
-                    tweetUrl: "https://twitter.com/"
+                    tweetUrl: "https://twitter.com/fooooooomin/status/1763831279433503173"
                 }
             ]
         }

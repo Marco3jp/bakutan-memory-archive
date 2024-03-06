@@ -9,7 +9,10 @@ export const onodenMxVision: Stage = {
             ratio: 1,
             memories: [
                 {
-                    tweetUrl: "https://twitter.com/"
+                    tweetUrl: "https://twitter.com/aiueoiuk/status/1763499703440916765"
+                },
+                {
+                    tweetUrl: "https://twitter.com/Mikuta_gumi/status/1763505457099108431"
                 }
             ]
         }

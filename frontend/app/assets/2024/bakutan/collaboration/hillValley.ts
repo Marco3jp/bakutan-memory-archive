@@ -9,7 +9,7 @@ export const hillValley: Stage = {
             ratio: 1,
             memories: [
                 {
-                    tweetUrl: "https://twitter.com/"
+                    tweetUrl: "https://twitter.com/vizocchi_2/status/1763386521292587405"
                 }
             ]
         }
