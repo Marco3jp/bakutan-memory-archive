@@ -12,6 +12,7 @@ import {laCittadella} from "~/assets/2024/bakutan/laCittadella";
 import {misc} from "~/assets/2024/bakutan/misc";
 import {afterparty} from "~/assets/2024/bakutan/afterparty";
 import {goods} from "~/assets/2024/bakutan/goods";
+import { officialNuontart } from "./officialNuontart";
 
 export const bakutan2024: NatoriSanaEvent = {
     name: "さなのばくたん。",
@@ -26,6 +27,7 @@ export const bakutan2024: NatoriSanaEvent = {
         sanaAruki,
         onodenMxVision,
         laCittadella,
+        officialNuontart,
         misc,
         goods,
         afterparty
