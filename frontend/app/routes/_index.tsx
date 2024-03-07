@@ -36,7 +36,7 @@ export default function Index() {
         const chapterLengthPercentage = (chapter.ratio / stageRatioSum) * 100
 
         return (
-            <li key={`${currentStage.name}-${index}`} className="group flex flex-col items-center cursor-pointer" onClick={selectChapter}
+            <li key={`${currentStage.name}${currentStageIndex}-${index}`} className="group flex flex-col items-center cursor-pointer" onClick={selectChapter}
                 // ↓の方針だと端数の処理次第で若干だけはみ出る可能性があるので、もしかするとflex-growの方がいいかもしれない
                 style={{height: `${chapterLengthPercentage}%`}}>
                 {/* こっちは○ */}
@@ -55,7 +55,7 @@ export default function Index() {
         const tweetId = memory.tweetUrl.match(getTwitterIdRegexp)?.groups?.id ?? ""
 
         return (
-            <li key={`${currentChapter.name}-${index}`} className="block">
+            <li key={`${currentChapter.name}${currentChapterIndex}-${index}`} className="block">
                 <TweetWrapper tweetId={tweetId}></TweetWrapper>
             </li>
         )
