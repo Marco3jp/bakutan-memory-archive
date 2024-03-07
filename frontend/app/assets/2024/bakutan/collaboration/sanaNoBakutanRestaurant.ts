@@ -8,7 +8,15 @@ export const sanaNoBakutanRestaurant: Stage = {
             name: "複数店舗",
             ratio: 1,
             memories: [
-                {tweetUrl: "https://twitter.com/VaistarStudio/status/1763454534670786695"}
+                {
+                    tweetUrl: "https://twitter.com/VaistarStudio/status/1763454534670786695"
+                },
+                {
+                    tweetUrl: "https://twitter.com/akiyuki_nagi/status/1763447796114641028"
+                },
+                {
+                    tweetUrl: "https://twitter.com/OJavanP/status/1765321587505717472"
+                }
             ]
         },
         {
@@ -23,6 +31,36 @@ export const sanaNoBakutanRestaurant: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/sumire_noix/status/1765261702613086615"
+                },
+                {
+                    tweetUrl: "https://twitter.com/pnpr_gm/status/1763393641928851842"
+                },
+                {
+                    tweetUrl: "https://twitter.com/akiyuki_nagi/status/1763394254645461318"
+                },
+                {
+                    tweetUrl: "https://twitter.com/nasub_sho/status/1763420582509691322"
+                },
+                {
+                    tweetUrl: "https://twitter.com/nao302500/status/1763461948115759334"
+                },
+                {
+                    tweetUrl: "https://twitter.com/sansenmanyen/status/1763837877790912927"
+                },
+                {
+                    tweetUrl: "https://twitter.com/___sai___/status/1763948916150878539"
+                },
+                {
+                    tweetUrl: "https://twitter.com/VaistarStudio/status/1765278836445364279"
+                },
+                {
+                    tweetUrl: "https://twitter.com/tiotoma/status/1765331285336277211"
+                },
+                {
+                    tweetUrl: "https://twitter.com/___sai___/status/1765364476172537988"
+                },
+                {
+                    tweetUrl: "https://twitter.com/kureya908/status/1765583057715888514"
                 }
             ]
         },
@@ -31,7 +69,28 @@ export const sanaNoBakutanRestaurant: Stage = {
             ratio: 1,
             memories: [
                 {
-                    tweetUrl: "https://twitter.com/konat_v/status/1763803371096735967"
+                    tweetUrl: "https://twitter.com/ryunote010/status/1763390700258005076"
+                },
+                {
+                    tweetUrl: "https://twitter.com/tanyomo96/status/1763399569139028469"
+                },
+                {
+                    tweetUrl: "https://twitter.com/nasub_sho/status/1763403708162040132"
+                },
+                {
+                    tweetUrl: "https://twitter.com/pnpr_gm/status/1763404321579037014"
+                },
+                {
+                    tweetUrl: "https://twitter.com/santyo_gg/status/1763448670996115902"
+                },
+                {
+                    tweetUrl: "https://twitter.com/seal_o_/status/1763832040531894454"
+                },
+                {
+                    tweetUrl: "https://twitter.com/sinstardust11/status/1763884459949199492"
+                },
+                {
+                    tweetUrl: "https://twitter.com/___sai___/status/1764245236958814333"
                 }
             ]
         },
@@ -44,6 +103,15 @@ export const sanaNoBakutanRestaurant: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/ikrmmso/status/1765236838896193582"
+                },
+                {
+                    tweetUrl: "https://twitter.com/sinstardust11/status/1763402970274959365"
+                },
+                {
+                    tweetUrl: "https://twitter.com/Gullive084/status/1763403769025540364"
+                },
+                {
+                    tweetUrl: "https://twitter.com/kogabreeze/status/1763549167987876059"
                 }
             ]
         },
@@ -52,7 +120,7 @@ export const sanaNoBakutanRestaurant: Stage = {
             ratio: 1,
             memories: [
                 {
-                    tweetUrl: "https://twitter.com/"
+                    tweetUrl: "https://twitter.com/sumire_noix/status/1765384992132321491"
                 }
             ]
         }
