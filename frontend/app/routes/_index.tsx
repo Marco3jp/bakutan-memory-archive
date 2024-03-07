@@ -19,6 +19,13 @@ export default function Index() {
 
     const [currentChapterIndex, setCurrentChapterIndex] = useState<number>(0)
     const currentChapter = currentStage.chapters[currentChapterIndex]
+    // YouTubeっぽい見た目をモチーフにしたのでちょっと違和感はあるけど、最初に一番新しいツイートが並ぶようにとりあえずする
+    // イベントが終わったりして落ち着いたら逆順にしたほうがいいのかもしれない
+    const sortedMemories = currentChapter.memories.sort((a, b) => {
+        const aId = a.tweetUrl.match(getTwitterIdRegexp)?.groups?.id ?? ""
+        const bId = b.tweetUrl.match(getTwitterIdRegexp)?.groups?.id ?? ""
+        return parseInt(bId) - parseInt(aId)
+    })
 
     const stageRatioSum = currentStage.chapters.reduce((acc, chapter) => { return acc + chapter.ratio }, 0)
     const chapterElements = currentStage.chapters.map((chapter, index) => {
@@ -44,7 +51,7 @@ export default function Index() {
         )
     })
 
-    const memoryElements = currentChapter.memories.map((memory, index) => {
+    const memoryElements = sortedMemories.map((memory, index) => {
         const tweetId = memory.tweetUrl.match(getTwitterIdRegexp)?.groups?.id ?? ""
 
         return (
