@@ -10,7 +10,17 @@ export const sanaNoBakutanMuseum: Stage = {
             memories: [
                 {
                     tweetUrl: "https://twitter.com/fooooooomin/status/1763831279433503173"
-                }
+                },
+                {
+                    tweetUrl: "https://twitter.com/_ort_7/status/1765377532608860303"
+                },
+                {
+                    tweetUrl: "https://twitter.com/fujiringoapple/status/1765398334473409014"
+                },
+                {
+                    tweetUrl: "https://twitter.com/Muda913/status/1765685830520377733"
+                },
+                
             ]
         }
     ]

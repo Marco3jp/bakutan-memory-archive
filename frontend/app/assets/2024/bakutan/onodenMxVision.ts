@@ -13,6 +13,18 @@ export const onodenMxVision: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/Mikuta_gumi/status/1763505457099108431"
+                },
+                {
+                    tweetUrl: "https://twitter.com/sinstardust11/status/1763368207648526593"
+                },
+                {
+                    tweetUrl: "https://twitter.com/babble042/status/1763432686851678588"
+                },
+                {
+                    tweetUrl: "https://twitter.com/Chihan37/status/1763809572316438651"
+                },
+                {
+                    tweetUrl: "https://twitter.com/VaistarStudio/status/1764163419044032517"
                 }
             ]
         }

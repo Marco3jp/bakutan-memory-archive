@@ -9,7 +9,13 @@ export const screen: Stage = {
             ratio: 1,
             memories: [
                 {
-                    tweetUrl: "https://twitter.com/"
+                    tweetUrl: "https://twitter.com/Bashamichi_H/status/1765675291844960273"
+                },
+                {
+                    tweetUrl: "https://twitter.com/OJavanP/status/1765677090047750176"
+                },
+                {
+                    tweetUrl: "https://twitter.com/babble042/status/1765710157361901779"
                 }
             ]
         }

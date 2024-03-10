@@ -13,6 +13,9 @@ import {misc} from "~/assets/2024/bakutan/misc";
 import {afterparty} from "~/assets/2024/bakutan/afterparty";
 import {goods} from "~/assets/2024/bakutan/goods";
 import {officialNuontart} from "~/assets/2024/bakutan/officialNuontart";
+import { nuontart } from "./senseeMade/nuontart";
+import { bigloves } from "./senseeMade/bigloves";
+import { officialSetting } from "./officialSetting";
 
 export const bakutan2024: NatoriSanaEvent = {
     name: "さなのばくたん。",
@@ -24,12 +27,15 @@ export const bakutan2024: NatoriSanaEvent = {
         sanaNoBakutanMuseum,
         hillValley,
         towerRecordsKawasaki,
-        sanaAruki,
-        onodenMxVision,
-        laCittadella,
         officialNuontart,
-        misc,
+        nuontart,
+        bigloves,
+        sanaAruki,
+        laCittadella,
         goods,
-        afterparty
+        onodenMxVision,
+        afterparty,
+        misc,
+        officialSetting
     ]
 }

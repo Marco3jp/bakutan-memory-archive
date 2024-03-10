@@ -12,7 +12,9 @@ export const laCittadella: Stage = {
                 {
                     tweetUrl: "https://twitter.com/VaistarStudio/status/1763553819554955677"
                 },
-
+                {
+                    tweetUrl: "https://twitter.com/cure_hamuchan/status/1763506977987342830"
+                }
             ]
         }
     ]
