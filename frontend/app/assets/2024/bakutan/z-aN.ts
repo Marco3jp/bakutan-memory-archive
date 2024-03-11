@@ -37,6 +37,21 @@ export const zan: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/37bakutan/status/1765681498768973829"
+                },
+                {
+                    tweetUrl: "https://twitter.com/316_Traveler/status/1767109447170900437"
+                }
+            ],
+        },
+        {
+            name: "予告編",
+            ratio: 1,
+            memories: [
+                {
+                    tweetUrl: "https://twitter.com/316_Traveler/status/1766795651864768679"
+                },
+                {
+                    tweetUrl: "https://twitter.com/316_Traveler/status/1766800239233785991"
                 }
             ]
         }

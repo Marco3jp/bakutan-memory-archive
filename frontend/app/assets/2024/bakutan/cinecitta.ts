@@ -140,7 +140,26 @@ export const cinecitta: Stage = {
                 {
                     tweetUrl: "https://twitter.com/mintaco_/status/1765711806964920689"
                 },
-                
+                /*
+                https://twitter.com/sys_ncqn/status/1765709797704482934
+                https://twitter.com/hanashigoto87/status/1765716128616046932
+                https://twitter.com/hanashigoto87/status/1765716133389516965
+                https://twitter.com/hanashigoto87/status/1765716636861190333
+                https://twitter.com/hanashigoto87/status/1765716641084846148
+                https://twitter.com/Lamune_karasuma/status/1765718757383827596
+                https://twitter.com/Arisa_Aihara_/status/1765719941968474609
+                https://twitter.com/hgs_bi/status/1765725048764260378
+                https://twitter.com/Y_human_fchlv/status/1765730428835737777
+                https://twitter.com/imojo_senri/status/1765730822974566498
+                https://twitter.com/Reflet_wizo/status/1765744983620177963
+                https://twitter.com/ryunote010/status/1766036390150857027
+                https://twitter.com/fujiringoapple/status/1766653551072419885
+                https://twitter.com/SwordBow/status/1766779499138711610
+                https://twitter.com/hitsuji_tonakai/status/1766774050205135308
+                https://twitter.com/_dekkai_love/status/1766775879995433116
+                https://twitter.com/castle_well/status/1766794661035954279
+                https://twitter.com/cure_hamuchan/status/1766806420035657864
+                */
             ]
         },
         {
@@ -155,10 +174,29 @@ export const cinecitta: Stage = {
                     // 消毒2
                     tweetUrl: "https://twitter.com/fooooooomin/status/1765658254976377252"
                 },
-
                 {
                     // ポスター
                     tweetUrl: "https://twitter.com/non_ocha2/status/1765656114136580606"
+                },
+                {
+                    // ポスター
+                    tweetUrl: "https://twitter.com/bukimin/status/1765716720650801568"
+                },
+                {
+                    // ポスター
+                    tweetUrl: "https://twitter.com/fujiringoapple/status/1766376618984104447"
+                }
+            ]
+        },
+        {
+            name: "プレゼント置き場",
+            ratio: 1,
+            memories: [
+                {
+                    tweetUrl: "https://twitter.com/swabdrinker/status/1766803096464965791"
+                },
+                {
+                    tweetUrl: "https://twitter.com/unigyutan/status/1766803192237670632"
                 }
             ]
         },

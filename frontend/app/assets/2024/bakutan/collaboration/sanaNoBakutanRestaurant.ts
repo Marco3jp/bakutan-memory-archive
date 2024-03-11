@@ -88,6 +88,9 @@ export const sanaNoBakutanRestaurant: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/___sai___/status/1764245236958814333"
+                },
+                {
+                    tweetUrl: "https://twitter.com/zuizuifoooo/status/1765945528402194745"
                 }
             ]
         },
@@ -115,6 +118,15 @@ export const sanaNoBakutanRestaurant: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/johnvyer_/status/1765653651950023050"
+                },
+                {
+                    tweetUrl: "https://twitter.com/BAN8/status/1766007380763095178"
+                },
+                {
+                    tweetUrl: "https://twitter.com/ryunote010/status/1766392373792412139"
+                },
+                {
+                    tweetUrl: "https://twitter.com/B_S_Havester/status/1767030033070301397"
                 }
             ]
         },
@@ -127,6 +139,9 @@ export const sanaNoBakutanRestaurant: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/mizin_com/status/1763838123107312043"
+                },
+                {
+                    tweetUrl: "https://twitter.com/Bashamichi_H/status/1766801961947701529"
                 }
             ]
         }

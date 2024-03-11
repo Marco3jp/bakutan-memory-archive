@@ -19,6 +19,9 @@ export const bigloves: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/maguchi_25/status/1765554542215831966"
+                },
+                {
+                    tweetUrl: "https://twitter.com/kanamenooto/status/1766432521024323650"
                 }
             ]
         },
@@ -58,6 +61,9 @@ export const bigloves: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/alpacachan0310/status/1765634050126196917"
+                },
+                {
+                    tweetUrl: "https://twitter.com/kanamenooto/status/1766432521024323650"
                 }
             ]
         },
@@ -103,6 +109,19 @@ export const bigloves: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/Rue_Ran/status/1765644965722587557"
+                },
+                // いくつかStudio FLAREさんでの撮影があるので切り出しても良さそう
+                {
+                    tweetUrl: "https://twitter.com/kooki_MAYOco/status/1766272667555074545"
+                },
+                {
+                    tweetUrl: "https://twitter.com/kaRiKikame27/status/1766303965220839613"
+                },
+                {
+                    tweetUrl: "https://twitter.com/nt776/status/1766377024221016229"
+                },
+                {
+                    tweetUrl: "https://twitter.com/omotikku/status/1766752931691536635"
                 }
             ]
         },
@@ -151,6 +170,18 @@ export const bigloves: Stage = {
                 {
                     // 歌ってみた
                     tweetUrl: "https://twitter.com/Wata_kanro/status/1765689766866190498"
+                },
+                {
+                    // 弾いてみた
+                    tweetUrl: "https://twitter.com/wokashi_ba/status/1765731627664282012"
+                },
+                {
+                    // おしゃれがすぎるかも……
+                    tweetUrl: "https://twitter.com/hydrangea_915/status/1766778597522690133"
+                },
+                {
+                    // うおフラスタのアンケート
+                    tweetUrl: "https://twitter.com/sanabaku_uooooo/status/1766814293109137842"
                 }
             ]
         },

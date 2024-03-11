@@ -5,11 +5,11 @@ export const goods: Stage = {
     locationName: "",
     chapters: [
         {
-            name: "物販",
+            name: "所長アクスタ",
             ratio: 1,
             memories: [
                 {
-                    tweetUrl: "https://twitter.com/"
+                    tweetUrl: "https://twitter.com/ko_ji_5487/status/1765716645606314465"
                 }
             ]
         }

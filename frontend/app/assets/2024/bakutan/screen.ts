@@ -18,6 +18,21 @@ export const screen: Stage = {
                     tweetUrl: "https://twitter.com/babble042/status/1765710157361901779"
                 }
             ]
+        },
+        {
+            name: "",
+            ratio: 1,
+            memories: [
+                {
+                    tweetUrl: "https://twitter.com/fujiringoapple/status/1765716443751170153"
+                },
+                {
+                    tweetUrl: "https://twitter.com/Bashamichi_H/status/1765721227342250280"
+                },
+                {
+                    tweetUrl: "https://twitter.com/_SuperVerseDAO/status/1765738340085846155"
+                }
+            ]
         }
     ]
 }

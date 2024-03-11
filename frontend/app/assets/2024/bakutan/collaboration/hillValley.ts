@@ -19,6 +19,13 @@ export const hillValley: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/sinstardust11/status/1763866668865147170"
+                },
+                {
+                    // 部分的に攻略情報？
+                    tweetUrl: "https://twitter.com/yofumago/status/1765930850611519510"
+                },
+                {
+                    tweetUrl: "https://twitter.com/nanami_7mm/status/1766779584341836176"
                 }
             ]
         }

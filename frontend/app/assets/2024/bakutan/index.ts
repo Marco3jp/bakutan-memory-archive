@@ -16,6 +16,7 @@ import {officialNuontart} from "~/assets/2024/bakutan/officialNuontart";
 import { nuontart } from "./senseeMade/nuontart";
 import { bigloves } from "./senseeMade/bigloves";
 import { officialSetting } from "./officialSetting";
+import { reports } from "./senseeMade/reports";
 
 export const bakutan2024: NatoriSanaEvent = {
     name: "さなのばくたん。",
@@ -34,6 +35,7 @@ export const bakutan2024: NatoriSanaEvent = {
         laCittadella,
         goods,
         onodenMxVision,
+        reports,
         afterparty,
         misc,
         officialSetting
