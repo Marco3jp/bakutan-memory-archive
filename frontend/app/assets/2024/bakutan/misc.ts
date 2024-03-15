@@ -85,6 +85,10 @@ export const misc: Stage = {
                 {
                     // 毒消しジングル？？？？
                     tweetUrl: "https://twitter.com/ayugasemahiro/status/1766780708633120801"
+                },
+                {
+                    // フラスタ裏話
+                    tweetUrl: "https://twitter.com/_dekkai_love/status/1767539728113647998"
                 }
             ]
         },

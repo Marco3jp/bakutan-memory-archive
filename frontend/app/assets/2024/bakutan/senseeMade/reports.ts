@@ -5,7 +5,7 @@ export const reports: Stage = {
     locationName: "インターネット",
     chapters: [
         {
-            name: "",
+            name: "参戦レポート",
             ratio: 1,
             memories: [
                 {
@@ -31,7 +31,46 @@ export const reports: Stage = {
                     tweetUrl: "https://twitter.com/burningTamago/status/1767147806861746215"
                 },
                 {
+                    tweetUrl: "https://twitter.com/mumeinasu/status/1767439653282713934"
+                },
+                {
+                    tweetUrl: "https://twitter.com/fujiringoapple/status/1767589423456383141"
+                },
+                {
+                    tweetUrl: "https://twitter.com/gurin_774/status/1767922558459146665"
+                },
+                {
+                    tweetUrl: "https://twitter.com/yofumago/status/1767932568362782947"
+                },
+                {
+                    tweetUrl: "https://twitter.com/yuhachi8484/status/1767958637862072362"
+                },
+                {
+                    tweetUrl: "https://twitter.com/niyoniyoNEZUMI2/status/1767962222620455261"
+                },
+                {
+                    tweetUrl: "https://twitter.com/mintaco_/status/1768069610375639550"
+                },
+                {
+                    tweetUrl: "https://twitter.com/tkmrrr9/status/1768207754177704096"
+                },
+                {
+                    tweetUrl: "https://twitter.com/ns3nknkdks/status/1768511385108103496"
+                }
+            ]
+        },
+        {
+            name: "フラスタレポート",
+            ratio: 1,
+            memories: [
+                {
                     tweetUrl: "https://twitter.com/Kohkoh22p_q/status/1767200008498245950"
+                },
+                {
+                    tweetUrl: "https://twitter.com/sumire_noix/status/1768221902001332423"
+                },
+                {
+                    tweetUrl: "https://twitter.com/n_seestern/status/1768289166595629325"
                 }
             ]
         }

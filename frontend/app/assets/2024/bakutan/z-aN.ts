@@ -40,6 +40,9 @@ export const zan: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/316_Traveler/status/1767109447170900437"
+                },
+                {
+                    tweetUrl: "https://twitter.com/316_Traveler/status/1767168217733349391"
                 }
             ],
         },

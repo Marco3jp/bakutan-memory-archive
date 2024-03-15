@@ -91,6 +91,9 @@ export const sanaNoBakutanRestaurant: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/zuizuifoooo/status/1765945528402194745"
+                },
+                {
+                    tweetUrl: "https://twitter.com/REDIA186/status/1767779075568136514"
                 }
             ]
         },
@@ -142,6 +145,9 @@ export const sanaNoBakutanRestaurant: Stage = {
                 },
                 {
                     tweetUrl: "https://twitter.com/Bashamichi_H/status/1766801961947701529"
+                },
+                {
+                    tweetUrl: "https://twitter.com/17DA_/status/1767567676485017848"
                 }
             ]
         }

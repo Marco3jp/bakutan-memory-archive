@@ -30,6 +30,9 @@ export const laCittadella: Stage = {
             memories: [
                 {
                     tweetUrl: "https://twitter.com/lunagarden12/status/1765941302586380730"
+                },
+                {
+                    tweetUrl: "https://twitter.com/REDIA186/status/1767842789977739581"
                 }
             ]   
         }
