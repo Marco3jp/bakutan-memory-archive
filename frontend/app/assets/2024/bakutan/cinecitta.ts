@@ -1,11 +1,11 @@
-import {Stage} from "~/model/event";
+import { Stage } from "~/model/event";
 
 export const cinecitta: Stage = {
     name: "チネチッタ（フラスタ、小ネタなど）",
     locationName: "CINECITTA’",
     chapters: [
         {
-            name: "フラスタ",
+            name: "フラスタその1",
             ratio: 1,
             memories: [
                 {
@@ -38,6 +38,12 @@ export const cinecitta: Stage = {
                 {
                     tweetUrl: "https://twitter.com/santyo_gg/status/1765659148941754516"
                 },
+            ]
+        },
+        {
+            name: "フラスタその2",
+            ratio: 1,
+            memories: [
                 {
                     tweetUrl: "https://twitter.com/temt_1212/status/1765660558529822818"
                 },
@@ -68,8 +74,14 @@ export const cinecitta: Stage = {
                 {
                     tweetUrl: "https://twitter.com/_dekkai_love/status/1765664441570381950"
                 },
+            ]
+        },
+        {
+            name: "フラスタその3",
+            ratio: 1,
+            memories: [
                 {
-                    tweetUrl:"https://twitter.com/_dekkai_love/status/1765664469001121869"
+                    tweetUrl: "https://twitter.com/_dekkai_love/status/1765664469001121869"
                 },
                 {
                     tweetUrl: "https://twitter.com/_dekkai_love/status/1765664511439093918"
@@ -98,6 +110,12 @@ export const cinecitta: Stage = {
                 {
                     tweetUrl: "https://twitter.com/akiyuki_nagi/status/1765669843695710503"
                 },
+            ]
+        },
+        {
+            name: "フラスタその4",
+            ratio: 1,
+            memories: [
                 {
                     tweetUrl: "https://twitter.com/sumire_noix/status/1765670677686947906"
                 },
@@ -128,6 +146,12 @@ export const cinecitta: Stage = {
                 {
                     tweetUrl: "https://twitter.com/dango_bot/status/1765676220891742707"
                 },
+            ]
+        },
+        {
+            name: "フラスタその5",
+            ratio: 1,
+            memories: [
                 {
                     tweetUrl: "https://twitter.com/A16DAI/status/1765676701777015188"
                 },
@@ -140,26 +164,67 @@ export const cinecitta: Stage = {
                 {
                     tweetUrl: "https://twitter.com/mintaco_/status/1765711806964920689"
                 },
-                /*
-                https://twitter.com/sys_ncqn/status/1765709797704482934
-                https://twitter.com/hanashigoto87/status/1765716128616046932
-                https://twitter.com/hanashigoto87/status/1765716133389516965
-                https://twitter.com/hanashigoto87/status/1765716636861190333
-                https://twitter.com/hanashigoto87/status/1765716641084846148
-                https://twitter.com/Lamune_karasuma/status/1765718757383827596
-                https://twitter.com/Arisa_Aihara_/status/1765719941968474609
-                https://twitter.com/hgs_bi/status/1765725048764260378
-                https://twitter.com/Y_human_fchlv/status/1765730428835737777
-                https://twitter.com/imojo_senri/status/1765730822974566498
-                https://twitter.com/Reflet_wizo/status/1765744983620177963
-                https://twitter.com/ryunote010/status/1766036390150857027
-                https://twitter.com/fujiringoapple/status/1766653551072419885
-                https://twitter.com/SwordBow/status/1766779499138711610
-                https://twitter.com/hitsuji_tonakai/status/1766774050205135308
-                https://twitter.com/_dekkai_love/status/1766775879995433116
-                https://twitter.com/castle_well/status/1766794661035954279
-                https://twitter.com/cure_hamuchan/status/1766806420035657864
-                */
+                {
+                    tweetUrl: "https://twitter.com/sys_ncqn/status/1765709797704482934"
+                },
+                {
+                    tweetUrl: "https://twitter.com/hanashigoto87/status/1765716128616046932"
+                },
+                {
+                    tweetUrl: "https://twitter.com/hanashigoto87/status/1765716133389516965"
+                },
+                {
+                    tweetUrl: "https://twitter.com/hanashigoto87/status/1765716636861190333"
+                },
+                {
+                    tweetUrl: "https://twitter.com/hanashigoto87/status/1765716641084846148"
+                },
+                {
+                    tweetUrl: "https://twitter.com/Lamune_karasuma/status/1765718757383827596"
+                }
+
+            ]
+        },
+        {
+            name: "フラスタその6",
+            ratio: 1,
+            memories: [
+                {
+                    tweetUrl: "https://twitter.com/Arisa_Aihara_/status/1765719941968474609"
+                },
+                {
+                    tweetUrl: "https://twitter.com/hgs_bi/status/1765725048764260378"
+                },
+                {
+                    tweetUrl: "https://twitter.com/Y_human_fchlv/status/1765730428835737777"
+                },
+                {
+                    tweetUrl: "https://twitter.com/imojo_senri/status/1765730822974566498"
+                },
+                {
+                    tweetUrl: "https://twitter.com/Reflet_wizo/status/1765744983620177963"
+                },
+                {
+                    tweetUrl: "https://twitter.com/ryunote010/status/1766036390150857027"
+                },
+                {
+                    tweetUrl: "https://twitter.com/fujiringoapple/status/1766653551072419885"
+                },
+                {
+                    tweetUrl: "https://twitter.com/SwordBow/status/1766779499138711610"
+                },
+                {
+                    tweetUrl: "https://twitter.com/hitsuji_tonakai/status/1766774050205135308"
+                },
+                {
+                    tweetUrl: "https://twitter.com/_dekkai_love/status/1766775879995433116"
+                },
+                {
+                    tweetUrl: "https://twitter.com/castle_well/status/1766794661035954279"
+                },
+                {
+                    tweetUrl: "https://twitter.com/cure_hamuchan/status/1766806420035657864"
+                }
             ]
         },
         {
