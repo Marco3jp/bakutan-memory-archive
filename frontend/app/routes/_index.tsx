@@ -7,7 +7,7 @@ import captionIcon from "../../public/caption.svg"
 
 export const meta: MetaFunction = () => {
     return [
-        {title: "bakutan memory archive (beta)"},
+        {title: "bakutan memory archive"},
         {name: "description", content: "イベントの思い出をいつまでも見やすく保つためのサービスです"},
     ];
 };
