@@ -7,6 +7,7 @@ import {
 } from "@remix-run/react";
 
 import "./tailwind.css";
+import favicon from "../public/favicon.ico"
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
+        <link rel="icon" href={favicon} />
         <Links />
         <title>bakutan memory archive</title>
       </head>
