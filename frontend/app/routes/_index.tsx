@@ -3,6 +3,7 @@ import {bakutan2024} from "~/assets/2024/bakutan";
 import {useState} from "react";
 import "node_modules/react-tweet/dist/twitter-theme/components.js"
 import {TweetWrapper} from "~/components/TweetWrapper";
+import captionIcon from "../../public/caption.svg"
 
 export const meta: MetaFunction = () => {
     return [
@@ -92,8 +93,10 @@ export default function Index() {
         )
     })()
 
+    const [shouldShowAboutSite, setShouldShowAboutSite] = useState<boolean>(false)
+
     return (
-        <div className="text-neutral-50 bg-gray-950 h-dvh w-dvw flex flex-col">
+        <div className="text-neutral-50 bg-gray-950 h-dvh w-dvw flex flex-col border border-natori-accent-pink rounded">
             <header id="header" className="border-b border-solid border-natori-accent-pink flex items-center justify-between">
                 <h1 className="px-2 shrink-0 text-sm/6 md:text-base">bakutan archive memory</h1>
                 {stageSelectElement}
@@ -101,16 +104,30 @@ export default function Index() {
 
             <main id="main" className="max-w-full flex">
                 <aside className="h-full px-2">
-                    <nav className="h-full">
-                        <ol className="h-full">
+                    <nav className="h-full flex flex-col">
+                        <ol className="grow">
                             {chapterElements}
                         </ol>
+                        <div className="py-2" onClick={() => setShouldShowAboutSite(true)}>
+                            <img src={captionIcon} alt="サイトについて" />
+                        </div>
                     </nav>
                 </aside>
                 <section className="h-full flex-grow">
                     <ol className="h-full overflow-y-auto py-4 flex flex-row flex-wrap content-start items-start gap-4">
                         {memoryElements}
                     </ol>
+                </section>
+                <section className={`absolute top-0 left-0 h-dvh w-dvw flex justify-center items-center bg-gray-950/75 ${shouldShowAboutSite ? "block" : "hidden"}`} onClick={() => {setShouldShowAboutSite(false)}}>
+                    <div className="p-4 max-w-[80%] border border-natori-accent-pink rounded space-y-2">
+                        <h2 className="text-xl">このサイトについて</h2>
+                        <p>bakutan memory archiveは名取さなさんのイベントに関わるツイートを見やすく残すことを目指している<strong>非公式のファンサイト</strong>です。</p>
+                        <p>掲載するツイートはすべて引用の形式を取っていますが、もし載せないでほしい場合は運営・管理者であるMarco (<a href="https://twitter.com/Marco_utau" target="_blank" className="text-blue-500 underline" onClick={(e) => {e.stopPropagation()}}>@Marco_utau</a>) にリプライ・メンションかDMで教えてください。</p>
+                        <p>同様に、名取さなさんの権利を持つ方からの要請（公式ツイートの掲載、サイトの公開に関してなど）があれば速やかに対応します。</p>
+                        <p>また、ツイートは手動でハッシュタグ検索から探しています。あまりにもせんせえがたの愛がデカく、ツイートが多すぎたためRT数などで絞り込んでおり、その他見落としなどで抜けているツイートもありますがご了承ください。</p>
+                        <p>サイトの運営者自身はこのサイトのアクセスログの収集やアクセス解析などを行っていません。ただし、サーバーを管理している第三者やツイートに関連する第三者（X社を含む）が何らかの収集を行っている可能性があります。</p>
+                        <p>このサイトのソースコードについては <a href="https://github.com/Marco3jp/bakutan-memory-archive" target="_blank" className="text-blue-500 underline" onClick={(e) => {e.stopPropagation()}}>https://github.com/Marco3jp/bakutan-memory-archive</a> に公開しています。</p>
+                    </div>
                 </section>
             </main>
         </div>
