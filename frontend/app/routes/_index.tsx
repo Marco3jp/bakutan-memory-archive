@@ -39,13 +39,13 @@ export default function Index() {
             <li key={`${currentStage.name}${currentStageIndex}-${index}`} className="group flex flex-col items-center cursor-pointer" onClick={selectChapter}
                 // ↓の方針だと端数の処理次第で若干だけはみ出る可能性があるので、もしかするとflex-growの方がいいかもしれない
                 style={{height: `${chapterLengthPercentage}%`}}>
-                {/* こっちは○ */}
-                <div className={
-                    `w-6 h-6 border-4 rounded-full ${currentChapterIndex === index ? "border-natori-accent-pink" : "border-natori-accent-pink-light group-hover:border-natori-accent-pink "}`
-                }></div>
                 {/* こっちは縦線 */}
                 <div className={
                     `flex-grow border-2 ${currentChapterIndex === index ? "border-natori-accent-pink" : "border-natori-accent-pink-light group-hover:border-natori-accent-pink"}`
+                }></div>
+                {/* こっちは○ */}
+                <div className={
+                    `w-6 h-6 border-4 rounded-full ${currentChapterIndex === index ? "border-natori-accent-pink" : "border-natori-accent-pink-light group-hover:border-natori-accent-pink "}`
                 }></div>
             </li>
         )
