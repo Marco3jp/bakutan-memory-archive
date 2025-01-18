@@ -4,6 +4,7 @@ import {useState} from "react";
 import "node_modules/react-tweet/dist/twitter-theme/components.js"
 import {TweetWrapper} from "~/components/TweetWrapper";
 import captionIcon from "../../public/caption.svg"
+import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
     return [
@@ -97,9 +98,9 @@ export default function Index() {
 
     return (
         <div className="text-neutral-50 bg-gray-950 h-dvh w-dvw flex flex-col border border-natori-accent-pink rounded">
-            <header id="header" className="border-b border-solid border-natori-accent-pink flex items-center justify-between">
-                <h1 className="px-2 shrink-0 text-sm/6 md:text-base">bakutan memory archive</h1>
+            <header id="header" className="px-2 border-b border-solid border-natori-accent-pink flex items-center justify-between">
                 {stageSelectElement}
+                <Link to="/indexes" className={"text-blue-300 underline shrink-0"}>他イベント</Link>
             </header>
 
             <main id="main" className="max-w-full flex">
