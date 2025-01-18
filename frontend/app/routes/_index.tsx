@@ -98,7 +98,7 @@ export default function Index() {
     return (
         <div className="text-neutral-50 bg-gray-950 h-dvh w-dvw flex flex-col border border-natori-accent-pink rounded">
             <header id="header" className="border-b border-solid border-natori-accent-pink flex items-center justify-between">
-                <h1 className="px-2 shrink-0 text-sm/6 md:text-base">bakutan archive memory</h1>
+                <h1 className="px-2 shrink-0 text-sm/6 md:text-base">bakutan memory archive</h1>
                 {stageSelectElement}
             </header>
 
