@@ -42,7 +42,7 @@ export default function Index() {
                 style={{height: `${chapterLengthPercentage}%`}}>
                 {/* こっちは縦線 */}
                 <div className={
-                    `flex-grow border-2 ${currentChapterIndex === index ? "border-natori-accent-pink" : "border-natori-accent-pink-light group-hover:border-natori-accent-pink"}`
+                    `grow border-2 ${currentChapterIndex === index ? "border-natori-accent-pink" : "border-natori-accent-pink-light group-hover:border-natori-accent-pink"}`
                 }></div>
                 {/* こっちは○ */}
                 <div className={
@@ -73,11 +73,11 @@ export default function Index() {
 
         return (
             <div className={`mr-2 text-neutral-50 ${shouldShowStageList ? "self-start" : ""}`}>
-                <div onClick={() => setShouldShowStageList(true)} className={`px-1 md:px-2 py-1 text-xs/6 md:text-base border border-natori-accent-pink rounded line-clamp-1 ${shouldShowStageList ? "hidden" : ""}`}>
+                <div onClick={() => setShouldShowStageList(true)} className={`px-1 md:px-2 py-1 text-xs/6 md:text-base border border-natori-accent-pink rounded-sm line-clamp-1 ${shouldShowStageList ? "hidden" : ""}`}>
                     {currentStage.name}
                 </div>
                 <div onClick={() => setShouldShowStageList(false)} className={`h-dvh w-dvw fixed top-0 left-0 z-10 ${shouldShowStageList ? "" : "hidden"}`}></div>
-                <div className={`flex flex-col px-2 py-1 border border-natori-accent-pink rounded divide-y divide-natori-accent-pink text-sm/6 md:text-base bg-gray-950 relative z-20 max-h-dvh overflow-y-auto ${shouldShowStageList ? "" : "hidden"}`}>
+                <div className={`flex flex-col px-2 py-1 border border-natori-accent-pink rounded-sm divide-y divide-natori-accent-pink text-sm/6 md:text-base bg-gray-950 relative z-20 max-h-dvh overflow-y-auto ${shouldShowStageList ? "" : "hidden"}`}>
                     {
                         bakutan2024.stages.map((stage, index) => {
                             return (
@@ -96,7 +96,7 @@ export default function Index() {
     const [shouldShowAboutSite, setShouldShowAboutSite] = useState<boolean>(false)
 
     return (
-        <div className="text-neutral-50 bg-gray-950 h-dvh w-dvw flex flex-col border border-natori-accent-pink rounded">
+        <div className="text-neutral-50 bg-gray-950 h-dvh w-dvw flex flex-col border border-natori-accent-pink rounded-sm">
             <header id="header" className="border-b border-solid border-natori-accent-pink flex items-center justify-between">
                 <h1 className="px-2 shrink-0 text-sm/6 md:text-base">bakutan memory archive</h1>
                 {stageSelectElement}
@@ -113,13 +113,13 @@ export default function Index() {
                         </div>
                     </nav>
                 </aside>
-                <section className="h-full flex-grow">
+                <section className="h-full grow">
                     <ol className="h-full overflow-y-auto py-4 flex flex-row flex-wrap content-start items-start gap-4">
                         {memoryElements}
                     </ol>
                 </section>
                 <section className={`absolute top-0 left-0 h-dvh w-dvw flex justify-center items-center bg-gray-950/75 ${shouldShowAboutSite ? "block" : "hidden"}`} onClick={() => {setShouldShowAboutSite(false)}}>
-                    <div className="p-4 max-w-[80%] border border-natori-accent-pink rounded space-y-2">
+                    <div className="p-4 max-w-[80%] border border-natori-accent-pink rounded-sm space-y-2">
                         <h2 className="text-xl">このサイトについて</h2>
                         <p>bakutan memory archiveは名取さなさんのイベントに関わるツイートを見やすく残すことを目指している<strong>非公式のファンサイト</strong>です。</p>
                         <p>掲載するツイートはすべて引用の形式を取っていますが、もし載せないでほしい場合は運営・管理者であるMarco (<a href="https://twitter.com/Marco_utau" target="_blank" className="text-blue-500 underline" onClick={(e) => {e.stopPropagation()}}>@Marco_utau</a>) にリプライ・メンションかDMで教えてください。</p>
