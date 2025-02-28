@@ -86,7 +86,7 @@ export default function EventPage(props: Props) {
                 <div onClick={() => setShouldShowStageList(false)} className={`h-dvh w-dvw fixed top-0 left-0 z-10 ${shouldShowStageList ? "" : "hidden"}`}></div>
                 <div className={`flex flex-col px-2 py-1 border border-natori-accent-pink rounded-sm divide-y divide-natori-accent-pink text-sm/6 md:text-base bg-gray-950 relative z-20 max-h-dvh overflow-y-auto ${shouldShowStageList ? "" : "hidden"}`}>
                     {
-                        bakutan2024.stages.map((stage, index) => {
+                        props.event.stages.map((stage, index) => {
                             return (
                                 <label className="block p-1">
                                     {stage.name}
