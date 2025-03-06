@@ -26,6 +26,10 @@
         // display name, idが書いてあるあたり
         font-size: 0.9rem;
         line-height: 1.2rem;
+
+        // 名前が長いときの対策
+        // 多分Flexで良い感じにできるんだけど全然コントロールできないので妥協案
+        max-width: 60dvw;
       }
     }
 
