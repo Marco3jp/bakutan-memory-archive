@@ -8,7 +8,7 @@
 3. Event
 4. Stage
 5. Chapter
-6. Mamory
+6. Memory
 
 ### 補足
 #### bakutan-memory-archive
