@@ -79,12 +79,12 @@ export default function EventPage(props: Props) {
         }
 
         return (
-            <div className={`mr-2 text-neutral-50 ${shouldShowStageList ? "self-start" : ""}`}>
-                <div onClick={() => setShouldShowStageList(true)} className={`px-1 md:px-2 py-1 text-xs/6 md:text-base border border-natori-accent-pink rounded-sm line-clamp-1 ${shouldShowStageList ? "hidden" : ""}`}>
+            <div className={`relative text-neutral-50`}>
+                <div onClick={() => setShouldShowStageList(true)} className={`px-1 md:px-2 py-1 text-xs/6 md:text-base border border-natori-accent-pink rounded-sm line-clamp-1`}>
                     {currentStage.name}
                 </div>
                 <div onClick={() => setShouldShowStageList(false)} className={`h-dvh w-dvw fixed top-0 left-0 z-10 ${shouldShowStageList ? "" : "hidden"}`}></div>
-                <div className={`flex flex-col px-2 py-1 border border-natori-accent-pink rounded-sm divide-y divide-natori-accent-pink text-sm/6 md:text-base bg-gray-950 relative z-20 max-h-dvh overflow-y-auto ${shouldShowStageList ? "" : "hidden"}`}>
+                <div className={`absolute top-0 max-w-[75dvw] w-max flex flex-col px-2 py-1 border border-natori-accent-pink rounded-sm divide-y divide-natori-accent-pink text-sm/6 md:text-base bg-gray-950 z-20 max-h-dvh overflow-y-auto ${shouldShowStageList ? "" : "hidden"}`}>
                     {
                         props.event.stages.map((stage, index) => {
                             return (
@@ -104,12 +104,12 @@ export default function EventPage(props: Props) {
 
     return (
         <div className="text-neutral-50 bg-gray-950 h-dvh w-dvw flex flex-col border border-natori-accent-pink rounded-sm">
-            <header id="header" className="border-b border-solid border-natori-accent-pink flex items-center justify-between">
+            <header id="header" className="p-2 border-b border-solid border-natori-accent-pink flex items-center justify-between">
                 {stageSelectElement}
-                <Link to="/indexes" className={"text-blue-300 underline shrink-0"}>他イベント</Link>
+                <Link to="/indexes" className={"ml-2 text-blue-300 underline shrink-0"}>他イベント</Link>
             </header>
 
-            <main id="main" className="max-w-full flex">
+            <main id="main" className="max-w-full grow overflow-hidden flex">
                 <aside className="h-full px-2">
                     <nav className="h-full flex flex-col">
                         <ol className="grow">
