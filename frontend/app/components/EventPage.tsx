@@ -1,4 +1,3 @@
-import type {MetaFunction} from "@remix-run/node";
 import {useState} from "react";
 import "node_modules/react-tweet/dist/twitter-theme/components.js"
 import {TweetWrapper} from "~/components/TweetWrapper";
@@ -12,12 +11,6 @@ export type Props = {
     initialChapterIndex: number
 }
 
-export const meta: MetaFunction = () => {
-    return [
-        {title: "bakutan memory archive"},
-        {name: "description", content: "イベントの思い出をいつまでも見やすく保つためのサービスです"},
-    ];
-};
 
 const getTwitterIdRegexp = /https:\/\/twitter.com\/.*\/status\/(?<id>\d+)/
 

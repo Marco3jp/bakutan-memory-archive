@@ -1,4 +1,12 @@
 import { Link } from "@remix-run/react";
+import type { MetaFunction } from "@remix-run/node";
+
+export const meta: MetaFunction = () => {
+    return [
+        {title: "bakutan memory archive"},
+        {name: "description", content: "イベントの思い出をいつまでも見やすく保つためのサービスです"},
+    ];
+};
 
 export default function IndexesPage() {
   return (
