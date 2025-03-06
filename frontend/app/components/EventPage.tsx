@@ -108,7 +108,7 @@ export default function EventPage(props: Props) {
                         <ol className="grow">
                             {chapterElements}
                         </ol>
-                        <div className="py-2" onClick={() => setShouldShowAboutSite(true)}>
+                        <div className="py-2 cursor-pointer" onClick={() => setShouldShowAboutSite(true)}>
                             <img src={captionIcon} alt="サイトについて" />
                         </div>
                     </nav>
@@ -119,14 +119,14 @@ export default function EventPage(props: Props) {
                     </ol>
                 </section>
                 <section className={`absolute top-0 left-0 h-dvh w-dvw flex justify-center items-center bg-gray-950/75 ${shouldShowAboutSite ? "block" : "hidden"}`} onClick={() => {setShouldShowAboutSite(false)}}>
-                    <div className="p-4 max-w-[80%] border border-natori-accent-pink rounded-sm space-y-2">
+                    <div className="p-4 max-w-[80%] bg-slate-950 border border-natori-accent-pink rounded-sm space-y-2">
                         <h2 className="text-xl">このサイトについて</h2>
                         <p>bakutan memory archiveは名取さなさんのイベントに関わるツイートを見やすく残すことを目指している<strong>非公式のファンサイト</strong>です。</p>
-                        <p>掲載するツイートはすべて引用の形式を取っていますが、もし載せないでほしい場合は運営・管理者であるMarco (<a href="https://twitter.com/Marco_utau" target="_blank" className="text-blue-500 underline" onClick={(e) => {e.stopPropagation()}}>@Marco_utau</a>) にリプライ・メンションかDMで教えてください。</p>
+                        <p>掲載するツイートはすべて引用の形式を取っていますが、もし載せないでほしい場合は運営・管理者であるMarco (<a href="https://twitter.com/Marco_utau" target="_blank" className="text-sky-300 underline" onClick={(e) => {e.stopPropagation()}}>@Marco_utau</a>) にリプライ・メンションかDMで教えてください。</p>
                         <p>同様に、名取さなさんの権利を持つ方からの要請（公式ツイートの掲載、サイトの公開に関してなど）があれば速やかに対応します。</p>
                         <p>また、ツイートは手動でハッシュタグ検索から探しています。あまりにもせんせえがたの愛がデカく、ツイートが多すぎたためRT数などで絞り込んでおり、その他見落としなどで抜けているツイートもありますがご了承ください。</p>
                         <p>サイトの運営者自身はこのサイトのアクセスログの収集やアクセス解析などを行っていません。ただし、サーバーを管理している第三者やツイートに関連する第三者（X社を含む）が何らかの収集を行っている可能性があります。</p>
-                        <p>このサイトのソースコードについては <a href="https://github.com/Marco3jp/bakutan-memory-archive" target="_blank" className="text-blue-500 underline" onClick={(e) => {e.stopPropagation()}}>https://github.com/Marco3jp/bakutan-memory-archive</a> に公開しています。</p>
+                        <p>このサイトのソースコードについては <a href="https://github.com/Marco3jp/bakutan-memory-archive" target="_blank" className="text-sky-300 underline" onClick={(e) => {e.stopPropagation()}}>https://github.com/Marco3jp/bakutan-memory-archive</a> に公開しています。</p>
                     </div>
                 </section>
             </main>
