@@ -99,7 +99,7 @@ export default function EventPage(props: Props) {
         <div className="text-neutral-50 bg-gray-950 h-dvh w-dvw flex flex-col border border-natori-accent-pink rounded-sm">
             <header id="header" className="p-2 border-b border-solid border-natori-accent-pink flex items-center justify-between">
                 {stageSelectElement}
-                <Link to="/indexes" className={"ml-2 text-sky-300 underline shrink-0"}>他イベント</Link>
+                <Link to="/" className={"ml-2 text-sky-300 underline shrink-0"}>他イベント</Link>
             </header>
 
             <main id="main" className="max-w-full grow overflow-hidden flex">
